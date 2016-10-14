@@ -8,13 +8,13 @@ import (
 	"github.com/handwritingio/go-client/handwritingio"
 )
 
-var key = "<YOUR TOKEN>"
-var secret = "<YOUR SECRET>"
+var key = "<C3NHF1M950AP52Y4>"
+var secret = "<E7XMR5G3P6WXKSB4 >"
 
 // this is the message we will turn into handwriting. It supports most
 // white-space characters such as newline (\n) and tab (\t) as well as
 // regular spaces
-var message = "Hey man!\n\n\tI love handwriting!\n\nLove,\n\tSomeone"
+var message = "Hey man, LOGON fist Try!\n\n\tI love handwriting!\n\nLove,\n\tSomeone"
 var filename = "out.pdf"
 
 func main() {
@@ -27,7 +27,7 @@ func main() {
 
 	// Prepare params for rendering
 	var params = handwritingio.DefaultRenderParamsPDF
-	params.HandwritingID = "31SAZEF000DX" // found in our catalog or by listing handwritings
+	params.HandwritingID = "8X3WQ4D800B0" // found in our catalog or by listing handwritings
 	params.HandwritingSize = "15pt"
 	params.Text = message
 	params.Height = "2in"
